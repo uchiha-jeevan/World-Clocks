@@ -3,9 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Time Zone Calculator</title>
+    <link rel="stylesheet" href="/style.css">
+    
 </head>
 <body>
-    <h2>Hello Jeevan</h2>
+    <div class="country">
+        <h2>Find Time Using Country</h2>
+    <label for="inputData">Enter Country or Time:</label>
+    <input type="text" id="inputData" placeholder="Enter country or time">
+    <button onclick="calculateTime()">Check</button>
+    </div>
+    <br>
+    <div class="time">
+        <h2>Find Country Using Time</h2>
+        <h4>Enter time in 24hr TimeFormat</h4>
+    <label for="inputData">Enter Time:</label>
+    <input type="text" id="hours" placeholder="Enter time in hours">
+    <input type="text" id="minutes" placeholder="Enter time in minutes">
+    <button onclick="TimeCountry()">Check</button>
+    </div>
+
+    <h3>Result:</h3>
+    <p id="result"></p>
+
+    <div class="all">
+        <a href="/all.html">Check all countries Times</a>
+    </div>
+    <script src="script.js"></script>
 </body>
 </html>
